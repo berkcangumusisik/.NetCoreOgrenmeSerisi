@@ -4,4 +4,17 @@
 }
 
 <h1>Index</h1>
+@{
+    var name = ViewBag.name;
+    <p>@name</p>
+} 
+<p>@name</p>
+<p>@ViewBag.name </p><!--@ViewBag. şeklinde veriyi getiririz.-->
+<p>@ViewData["age"]</p>
+<h1>İsimler</h1>
+@foreach (var item in ViewData["names"] as List<string>)
+{
+    <p>@item</p>
+}
 
+<p>@ViewBag.person.Id - @ViewBag.person.Name - @ViewBag.person.Age </p>
