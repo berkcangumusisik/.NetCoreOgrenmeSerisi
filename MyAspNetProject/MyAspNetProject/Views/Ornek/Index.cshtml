@@ -1,6 +1,8 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
+    var alert = "Bu bir alerttir.";
+    
 }
 
 <h1>Index</h1>
@@ -18,3 +20,33 @@
 }
 
 <p>@ViewBag.person.Id - @ViewBag.person.Name - @ViewBag.person.Age </p>
+
+<h1>Alert</h1>
+<div>Günün Tarihi @DateTime.Now.ToShortDateString()</div>
+
+@{
+    var datetime = DateTime.Now.ToShortDateString();
+    var message = "Günün Tarihi";
+    
+    @: Bugünün Tarihi : @datetime
+    <div>@message : @datetime</div>
+}
+
+@if (1 == 1)
+{
+    <p>Doğru</p>
+}
+else if (DateTime.IsLeapYear(DateTime.Now.Year))
+{
+    <p>Artık yıl</p>
+    
+}
+else
+{
+    <p>Yanlış</p>
+}
+
+@for (int i = 0; i < 10; i++)
+{
+    <p>@i</p>
+}

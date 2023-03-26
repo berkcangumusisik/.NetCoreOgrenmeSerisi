@@ -61,3 +61,21 @@ ViewData["age"] = 24;
 - TempData => TempData yöntemi ile Controller sınıfından View'a veri taşıma işlemini gerçekleştirebiliriz. Bir Action Metotundan diğer Action Metotuna veri taşımak için kullanılır.
 
  */
+
+
+/*
+Razor Syntax
+- Html içerisinde C# kodu yazabilmemizi sağlayan bir yapıdır.
+- Html içinde C# kodunu @ işareti ile başlatırız.
+- @{ } bloğu içerisinde birden fazla satırda C# kodu yazabiliriz.
+- @: ifadesi ile Html içerisinde C# kodu yazabiliriz.
+
+ 
+ */
+
+/*
+ * Bir layoutta genel olarak header, footer, menü gibi alanlar aynıdır. Bu alanları layoutta tanımlayıp, diğer viewlarda kullanabiliriz.
+ * Content alanı ise her viewda farklıdır. Bu alanı layoutta tanımlamayıp, viewlarda tanımlayabiliriz. 
+ * @RenderBody() => Content alanını temsil eder. 
+ * Birden fazla layout kullanmak bulunabilir. 
+ */
